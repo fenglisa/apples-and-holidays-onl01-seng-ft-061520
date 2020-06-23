@@ -63,7 +63,7 @@ def all_supplies_in_holidays(holiday_hash)
       if holidayName.include?("_")
         puts "  #{holidayName.titleize.split("_").join(" ")}: #{supplies.join(", ")}"
       else
-         puts "  #{holidayName.titleize}: #{supplies.join(", ")}"
+         puts "  #{holidayName.capitalize}: #{supplies.join(", ")}"
       end
     end
   end
